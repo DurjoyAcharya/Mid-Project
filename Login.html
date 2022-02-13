@@ -19,35 +19,40 @@
             Sign up
           </button>
         </div>
-        <form id="login" class="input-group">
+        <form id="login" class="input-group" action="Signup.php" method="post">
           <input
             type="text"
             class="input-field"
             placeholder="user id"
             required
+            name="userid"
           />
           <input
             type="password"
             class="input-field"
             placeholder="password"
             required
+            name="password"
           />
           <input type="checkbox" class="check-box" />
           <span>Remenber Password</span>
+          <input type="hidden" name="form_submitted" value="1" />
           <button type="submit" class="submit-btn">Log in</button>
         </form>
-        <form id="register" class="input-group">
+        <form id="register" class="input-group" action="Signup.php" method="post">
           <input
             type="text"
             class="input-field"
             placeholder="User Name"
             required
+            name="username"
           />
           <input
             type="email"
             class="input-field"
             placeholder="Email"
             required
+            name="email"
           />
 
           <input
@@ -55,9 +60,11 @@
             class="input-field"
             placeholder="Password"
             required
+            name="password"
           />
-          <input type="checkbox" class="check-box" />
+          <input type="checkbox" class="check-box" name="agree"/>
           <span>I agree to the terms and conditions</span>
+          <input type="hidden" name="form_submitted" value="1" />
           <button type="submit" class="submit-btn">Register</button>
         </form>
       </div>
