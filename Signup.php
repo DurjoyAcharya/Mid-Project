@@ -1,3 +1,6 @@
+<?php
+  require 'collectdata.php';
+?>
 <html lang="en">
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,8 +22,9 @@
     <p style="font-family: italic;text-align: center">You have been registered as
         <?php echo $_POST['email']?>
     </p>
-    <p style="text-align: center"> Go <a href="/Login.html">back</a> to the form</p>
+    <p style="text-align: center"> Go <a href="/signup.html">back</a> to the form</p>
     <?php endif; ?>
     <?php  endif; ?>
+
 </body>
 </html>
